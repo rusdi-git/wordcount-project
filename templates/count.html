@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count Result</title>
+</head>
+<body>
+    <h1>Total word: {{total}}</h1>
+
+    <h1>Count by word</h1>
+    <h2>Simple word</h2>
+        {% for word, c in sorted_simple %}
+            {{word}} - {{c}}
+            <br/>
+        {% endfor %}
+    <h2>Unique word</h2>
+        {% for word, c in sorted_unique %}
+            {{word}} - {{c}}
+            <br>
+        {% endfor %}
+</body>
+</html>
